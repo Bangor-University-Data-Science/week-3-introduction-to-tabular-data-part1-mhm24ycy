@@ -11,7 +11,7 @@ def load_titanic_data(filepath: str) -> pd.DataFrame:
         pd.DataFrame: Loaded Titanic dataset as a DataFrame.
     """
     try:
-        df = pd.read_csv(filepath)
+        df = pd.read_csv("../../data/titanic.csv")
         return df
     except FileNotFoundError:
         print(f"File not found: {filepath}")
